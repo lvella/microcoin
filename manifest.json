@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "µCoin",
+  "description": "This extension manages micropayments made with Bitcoin.",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+	  "js": ["search_btc_addr.js"],
+	  "all_frames": true
+    }
+  ]
+}
